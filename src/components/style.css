@@ -1,0 +1,25 @@
+.task {
+    padding: 10px 40px;
+}
+
+.complete .task{
+    background-color: rgb(115, 154, 212);
+}
+
+.active .task{
+    background-color: rgb(92, 175, 92);
+}
+
+.wait .task {
+    background-color: rgb(167, 163, 163);
+}
+
+.task-block {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+#content {
+    display: flex;
+}

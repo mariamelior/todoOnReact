@@ -1,25 +1,62 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #F7F7F7;
+    margin: 0;
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+    padding: 4px 14px;
+    margin: 0 3px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(210, 210, 210);
+}
+
 .task {
-    padding: 10px 40px;
+    padding: 10px 30px;
+    margin: 6px 0;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(211, 211, 210);
+    border-radius: 2px;
+    box-shadow: 3px 3px 8px 3px rgba(189, 184, 184, 0.5);
+    background-color: #F9F9F9;
+}
+
+.actions {
+    margin-left: auto;
 }
 
 .complete .task{
-    background-color: rgb(115, 154, 212);
+   color: rgb(115, 154, 212);
 }
 
 .active .task{
-    background-color: rgb(92, 175, 92);
+    color: rgb(92, 175, 92);
 }
 
 .wait .task {
-    background-color: rgb(167, 163, 163);
+    color: rgb(167, 163, 163);
 }
 
 .task-block {
     display: flex;
     flex-direction: column;
-    width: 33%;
+    margin: 4px;
+    flex: 1 1 auto;
 }
 
-#content {
+.task-area {
     display: flex;
+    margin: 0 6px;  
+}
+
+.add-area {
+    border-bottom: 1px solid rgb(211, 211, 210);
+    padding: 15px 10px;
 }
